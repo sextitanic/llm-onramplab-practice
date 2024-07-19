@@ -1,0 +1,27 @@
+{
+  "name": "llm-for-onramplab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sextitanic/llm-onramplab-practice.git"
+  },
+  "author": "Mars",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sextitanic/llm-onramplab-practice/issues"
+  },
+  "homepage": "https://github.com/sextitanic/llm-onramplab-practice#readme",
+  "dependencies": {
+    "@types/node": "^20.14.11",
+    "dotenv": "^16.4.5",
+    "langchain": "^0.2.10",
+    "openai": "^4.52.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
