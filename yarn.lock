@@ -45,7 +45,7 @@
     zod "^3.22.4"
     zod-to-json-schema "^3.22.3"
 
-"@langchain/openai@>=0.1.0 <0.3.0":
+"@langchain/openai@>=0.1.0 <0.3.0", "@langchain/openai@^0.2.4":
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@langchain/openai/-/openai-0.2.4.tgz#02d210d2aacdaf654bceb686b3ec49517fb3b1ea"
   integrity sha512-PQGmnnKbsC8odwjGbYf2aHAQEZ/uVXYtXqKnwk7BTVMZlFnt+Rt9eigp940xMKAadxHzqtKJpSd7Xf6G+LI6KA==

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sextitanic/llm-onramplab-practice#readme",
   "dependencies": {
+    "@langchain/openai": "^0.2.4",
     "@types/node": "^20.14.11",
     "dotenv": "^16.4.5",
     "langchain": "^0.2.10",
