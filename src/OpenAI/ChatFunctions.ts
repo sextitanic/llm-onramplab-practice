@@ -110,12 +110,14 @@ async function main(message: string) {
 
     tokenUsage += completion.usage.total_tokens || 0;
     if (completion.choices[0].message.tool_calls?.length > 0) {
+      chatHistory.push(completion.choices[0].message);
+
       for (const tool of completion.choices[0].message.tool_calls) {
         chatHistory.push({
           tool_call_id: tool.id,
           role: 'tool',
           tool_name: tool.function.name,
-          content: { customer_collected: tool.function.arguments },
+          content: tool.function.arguments,
         })
 
         switch (tool.function.name) {
