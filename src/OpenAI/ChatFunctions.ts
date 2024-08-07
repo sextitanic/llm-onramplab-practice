@@ -109,9 +109,9 @@ async function main(message: string) {
        */
 
     tokenUsage += completion.usage.total_tokens || 0;
-    if (completion.choices[0].message.tool_calls?.length > 0) {
-      chatHistory.push(completion.choices[0].message);
+    chatHistory.push(completion.choices[0].message);
 
+    if (completion.choices[0].message.tool_calls?.length > 0) {
       for (const tool of completion.choices[0].message.tool_calls) {
         chatHistory.push({
           tool_call_id: tool.id,
